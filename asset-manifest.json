@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/ml-demo-app/static/js/main.21e5916a.js",
+    "index.html": "/ml-demo-app/index.html",
+    "main.21e5916a.js.map": "/ml-demo-app/static/js/main.21e5916a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.21e5916a.js"
+  ]
+}
