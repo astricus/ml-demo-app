@@ -67,8 +67,8 @@ export default function SignInSide() {
   };
 
   if (
-    str.toLowerCase().includes('gettherefast') ||
-    input.toLowerCase() === 'gettherefast'
+    str.toLowerCase().trim().includes('gettherefast') ||
+    input.trim().toLowerCase() === 'gettherefast'
   ) {
     return <Fun goBack={clearStr} />;
   }
