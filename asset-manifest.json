@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.js": "/ml-demo-app/static/js/main.21e5916a.js",
+    "main.css": "/ml-demo-app/static/css/main.cd35ee83.css",
+    "main.js": "/ml-demo-app/static/js/main.754982e1.js",
+    "static/media/funny-prank.gif": "/ml-demo-app/static/media/funny-prank.9a86643594454796dfb0.gif",
+    "static/media/rays.png": "/ml-demo-app/static/media/rays.93984a7f80970022b958.png",
     "index.html": "/ml-demo-app/index.html",
-    "main.21e5916a.js.map": "/ml-demo-app/static/js/main.21e5916a.js.map"
+    "main.cd35ee83.css.map": "/ml-demo-app/static/css/main.cd35ee83.css.map",
+    "main.754982e1.js.map": "/ml-demo-app/static/js/main.754982e1.js.map"
   },
   "entrypoints": [
-    "static/js/main.21e5916a.js"
+    "static/css/main.cd35ee83.css",
+    "static/js/main.754982e1.js"
   ]
 }
