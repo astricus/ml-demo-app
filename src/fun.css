@@ -1,0 +1,43 @@
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* basic structure for the rays setup */
+.fun-container	{ 
+  height: 100vh;
+	position: relative;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fun-image {
+  background: url(funny-prank.gif) 0 0 no-repeat;
+  position: absolute; 
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 280px; 
+	height: 498px;
+  z-index: 1;
+}
+
+.fun-animation	{
+	background: url(rays.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+	min-width: 900px;
+	height: 900px;
+	
+	/* microsoft ie */
+	animation-name: spin; 
+	animation-duration: 40000ms; /* 40 seconds */
+	animation-iteration-count: infinite; 
+	animation-timing-function: linear;
+}
