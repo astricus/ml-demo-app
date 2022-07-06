@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Fun from "./Fun";
 import { firebaseSignIn, googleSignIn } from "./firebase.utils";
 import Landing from "./Landing";
+import Header from "./Header";
 
 function Copyright(props: any) {
   return (
@@ -71,12 +72,14 @@ export default function SignInSide() {
     }
   };
 
-  const handleGoogleSignIn = async (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleGoogleSignIn = async (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
     const currentUser = await googleSignIn();
     if (currentUser) {
       setUser(currentUser);
     }
-  }
+  };
 
   if (
     str.toLowerCase().trim().includes("gettherefast") ||
@@ -86,7 +89,11 @@ export default function SignInSide() {
   }
 
   if (user) {
-    return <Landing />;
+    return (
+      <Header isSignedIn={user} onSignOut={() => setUser(null)}>
+        <Landing />
+      </Header>
+    );
   }
 
   return (
